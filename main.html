@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Select</title>
+
+    <link rel="stylesheet" href="./node_modules/select2/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="./node_modules/select2/dist/css/select2.css" />
+
+
+    <style>
+        body {
+            margin: 40px 40px 0px 40px;
+        }
+
+        #btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        #submit-btn {
+            padding: 6px;
+            outline: none;
+            background-color: green;
+            color: white;
+            border: 0px;
+
+        }
+
+        #submit-btn:hover {
+            background-color: rgb(136, 185, 136);
+            color: white;
+            font: 300;
+            font-size: medium;
+        }
+
+        #danger {
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <label for="districts">
+            <span>Select Districts</span>
+            <select id="district-select" class="js-example-responsive" name="districts[]" multiple="multiple"
+                style="width: 100%">
+            </select>
+        </label>
+        <p id="danger"></p>
+    </div>
+
+
+    <div id="btn">
+        <button id="submit-btn">Submit</button>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="./main.js "></script>
+
+</body>
+
+</html>
