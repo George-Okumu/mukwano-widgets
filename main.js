@@ -1,5 +1,7 @@
 const api_url = "http://localhost:5050/https://agri.mukwano.com/locations/districts";
 
+const api = "https://agri.mukwano.com/locations/districts";
+
 // Select org
 // https://select2.org/getting-started/basic-usage
 // Multi-boxes(pillbox);
@@ -11,7 +13,7 @@ $(function () {
     $(".js-example-responsive").select2({
         width: 'resolve'
     });
-    fetch(api_url).then((res) => res.json())
+    fetch(api).then((res) => res.json())
         .then((data) => {
             $("#district-select").html(data.map((dat) => `
       <option value="${dat.id}">${dat.name}</option>
