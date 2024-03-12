@@ -1,14 +1,12 @@
+import { API_URL } from "./url";
 
-
-const api = "https://agri.mukwano.com/locations/districts";
 
 // Select org
 // https://select2.org/getting-started/basic-usage
 // Multi-boxes(pillbox);
 // Person able to select more than 1 district;
 // Console log the selected district ids in csv format.
-const api_url = process.env.API_URL;
-console.log(api_url)
+const api = API_URL;
 
 $(function () {
     $(".js-example-responsive").select2({
